@@ -1,5 +1,5 @@
 deployment:
   staging:
     branch: master
-      heroku:
-       appname:murmuring-citadel-7777 
+    heroku:
+      appname: murmuring-citadel-7777 
