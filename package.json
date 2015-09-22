@@ -1,0 +1,18 @@
+{
+  "name": "sua-dashboard",
+  "version": "0.0.1",
+  "description": "An information dashboard for SUA members",
+  "author": "Andrew Brown <arbrown93@icloud.com>",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/arbrown93/sua-dashboard.git"
+  },
+  "private": true,
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.13.3"
+  }
+}
