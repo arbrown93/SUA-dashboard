@@ -4,7 +4,7 @@
   "description": "An information dashboard for SUA members",
   "author": "Andrew Brown <arbrown93@icloud.com>",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
     "test": "mocha"
   },
   "repository": {
