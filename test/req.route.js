@@ -1,7 +1,7 @@
 var express = require('express');
 var request = require('supertest');
 
-describe('req, function(){
+describe('req', function(){
   describe('.route', function(){
     it('should be the executed route', function(done){
       var app = express();
