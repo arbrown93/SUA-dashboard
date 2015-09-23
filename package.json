@@ -5,6 +5,7 @@
   "author": "Andrew Brown <arbrown93@icloud.com>",
   "scripts": {
     "start": "node server.js"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
