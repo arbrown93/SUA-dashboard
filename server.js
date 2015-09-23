@@ -4,9 +4,7 @@ var app = express();
 app.get('/', function (req, res) {
 	res.send('Hello World!');
 });
-var server = app.listen(process.env.PORT || 3000, function(){
-	var host = server.address().address;
-	var port = server.address().port;
-
-	console.log('App listing at http://%s:%s', host, port);
+var server = app.listen(process.env.PORT || 3000, process.env.IP || "0.0.0.0", function(){
+  var addr = server.address();
+  console.log('App listing at ", addr.address + ":" + addr.port);
 });
