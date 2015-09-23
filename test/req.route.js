@@ -1,18 +1,11 @@
 var express = require('express');
 var request = require('supertest');
-
-describe('req', function(){
-  describe('.route', function(){
-    it('should be the executed route', function(done){
-      var app = express();
-
-      app.get('/', function(req, res,next){
-        req.route.path.should.equal('/');
-	next();
-      });
-      request(app)
-      .get('/')
-      .expect(200, done);
-    });
-  });
+request = request("127.0.0.1" + ":" + 5000);
+describe('Get /', function(){
+	it('respond to request', function(done){
+		request.get('/').expect(200, done);
+	});
+	it('respond with content', function(done){
+		request.get('/').expect('Hello World!', done);
+	});
 });
